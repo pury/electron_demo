@@ -1,0 +1,49 @@
+{
+  "name": "electron_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build:win64": "electron-builder --win --x64",
+    "build:win32": "electron-builder --win --ia32",
+    "build:mac": "electron-builder --mac --dir=outMac",
+    "build:linux": "electron-builder --linux"
+  },
+  "build": {
+    "productName": "Electron Demo",
+    "appId": "com.electron.demo",
+    "mac": {
+      "icon": "assets/logo.icns"
+    },
+    "win": {
+      "icon": "assets/logo.ico",
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "icon": "assets/logo.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "guid": "NRD Studio",
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./assets/logo.ico",
+      "uninstallerIcon": "./assets/logo.ico",
+      "installerHeaderIcon": "./assets/logo.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "NRD Studio"
+    }
+  },
+  "author": "pury <szwzjx@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^20.0.1",
+    "electron-builder": "^23.3.3"
+  }
+}
