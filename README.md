@@ -3,11 +3,10 @@
 使用`Electron`构建桌面应用程序，并用`electron-builder`打包成可安装运行的文件，支持三个平台：macOS、Windows和Linux。
 
 
-### 安装依赖
+### 安装
 
 ```
 yarn add
-
 ```
 
 
