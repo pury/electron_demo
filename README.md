@@ -6,7 +6,7 @@
 ### 安装
 
 ```
-yarn add
+yarn install
 ```
 
 
